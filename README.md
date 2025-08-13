@@ -47,4 +47,22 @@ Website ini dikembangkan sebagai bagian dari skripsi untuk memenuhi syarat kelul
 ## Cara Menjalankan
 1. **Clone repository:**
    ```bash
-   git clone https://github.com/username/apotek-huda.git
+   https://github.com/xsillery12/website_apotek_huda.git
+
+2. **Install dependensi:**
+   - Pastikan Anda telah menginstal Composer di sistem Anda.
+   - Jalankan perintah berikut di direktori project:
+   ```bash
+   composer install
+
+3. **Konfigurasi .env:**
+   - Salin file .env.example menjadi .env.
+   - Atur pengaturan database dan Midtrans di file .env.
+
+4. **Migrasi database:**
+   ```bash
+   php artisan migrate
+
+5. **Jalankan server lokal:**
+   ```bash
+   php artisan serve
